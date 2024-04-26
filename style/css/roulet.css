@@ -1,0 +1,217 @@
+/* orelega-one-regular - latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'Orelega One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../fonts/orelega-one-v12-cyrillic_latin-regular.woff2') format('woff2'); 
+}
+
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../fonts/inter-v13-cyrillic-regular.woff2') format('woff2');
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    color: #2F1B09;
+    margin: 0;
+    background-size: initial;
+    background-image: linear-gradient(to bottom, #7E654D, #FFE4C3, #FFE4C3);
+    background-repeat: no-repeat;
+}
+
+
+/* Header */
+.header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2F1B091A;
+    overflow: hidden;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.header__container{
+    min-width: 1400px;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__nav__element{
+    margin-right: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    display: inline-block;
+    padding: 12px 8px;
+    gap: 8px;
+}
+.header__nav__element:last-child{
+    margin-right: 0;
+}
+
+.header__link{
+    text-decoration: none;
+    color: #2F1B09;
+}
+.header__link:hover, .header__link:focus{
+    background-image: linear-gradient(to right, #2F1B09, #FFC581, #754522);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;   
+}
+.header__link-here{
+    font-family: "Orelega One";
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #2F1B09;
+    background-image: linear-gradient(to right, #2F1B09, #FFC581, #754522);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone; 
+}
+
+
+/* Title */
+.title{
+    max-width: 800px;
+    margin-top: 180px;
+    font-family: "Orelega One";
+    font-weight: 400;
+    font-size: 100px;
+    text-align: center;
+    background-image: linear-gradient(to right, #2F1B09, #FFC581, #754522 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 60px;
+}
+
+
+/* Prize */
+.prize{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.prize__top, .prize__bottom{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    min-height: 750px;
+    margin-bottom: 40px;
+}
+.prize__bottom{
+    margin-bottom: 90px;
+}
+
+.prize-element{
+    width: 32%;
+    border: 5px solid #2F1B09;
+    border-radius: 30px;
+}
+
+.prize__img{
+    display: block;
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 40px;
+    margin-bottom: 36px;
+}
+
+.prize__title{
+    font-size: 56px;
+    font-family: 'Orelega One';
+    text-align: center;
+    margin-bottom: 28px;
+}
+
+.prize__chance{
+    font-size: 40px;
+    font-family: 'Orelega One';
+    text-align: center;
+}
+
+.prize__drop{
+    padding: 0;
+    list-style-type: none;
+}
+
+.prize__drop-element{
+    text-align: center;
+    font-size: 20px;
+    margin-bottom: 16px;
+}
+.prize__drop-element:last-child{
+    margin-bottom: 40px;
+}
+
+
+/* Footer */
+.footer{    
+    background-color: #2F1B09;
+}
+
+.footer__container{
+    min-width: 1400px;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__left{
+    background-image: linear-gradient(to right, #2F1B09, #FFC581, #754522 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+}
+
+.footer__links-element{
+    display: inline;
+    margin-right: 16px;
+}
+.footer__links-element:last-child{
+    margin-right: 0;
+}
+
+.footer__links-link{
+    text-decoration: none;
+}

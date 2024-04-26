@@ -1,0 +1,596 @@
+/* orelega-one-regular - latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'Orelega One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../fonts/orelega-one-v12-cyrillic_latin-regular.woff2') format('woff2'); 
+}
+
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../fonts/inter-v13-cyrillic-regular.woff2') format('woff2');
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    color: #2F1B09;
+    margin: 0;
+    background-size: initial;
+    background-image: linear-gradient(to bottom, #FFE4C3, #FFE4C3, #7E654D);
+    background-repeat: no-repeat;
+}
+
+
+/* Header */
+.header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2F1B091A;
+    overflow: hidden;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.header__container{
+    min-width: 1400px;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__nav__element{
+    margin-right: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    display: inline-block;
+    padding: 12px 8px;
+    gap: 8px;
+}
+.header__nav__element:last-child{
+    margin-right: 0;
+}
+
+.header__link{
+    text-decoration: none;
+    color: #2F1B09;
+}
+.header__link:hover, .header__link:focus{
+    background-image: linear-gradient(to right, #2F1B09, #FFC581, #754522);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;   
+}
+
+
+/* Background Images */
+.bg_images__bg1{
+    display: flex;
+    flex-wrap: nowrap;
+    z-index: -1;
+    position: absolute;
+    mask-image: radial-gradient(ellipse, #FFFFFF 1%, #FFFFFF00 75%);
+    right: 0px;
+    height: 120%;
+}
+.bg_images__bg2{
+    display: flex;
+    flex-wrap: nowrap;
+    z-index: -1;
+    position: absolute;
+    mask-image: radial-gradient(circle at 0% 50%, #FFFFFF 1%, #FFFFFF00 40%);
+    left: 0px;
+    top: 800px;
+    height: 60%;
+}
+.bg_images__bg3{
+    display: flex;
+    flex-wrap: nowrap;
+    z-index: -1;
+    position: absolute;
+    mask-image: radial-gradient(ellipse, #FFFFFF 1%, #FFFFFF00 80%);
+    height: 50%;
+    left: 25%;
+    top: 3450px;
+}
+.bg_images__bg4{
+    display: flex;
+    flex-wrap: nowrap;
+    z-index: -1;
+    position: absolute;
+    mask-image: radial-gradient(circle at 80%, #FFFFFF 1%, #FFFFFF00 70%);
+    right: 0;
+    height: 60%;
+}
+
+/* Intro */
+.intro{
+    max-width: 1400px;
+    display: flex;
+    overflow: visible;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    padding-top: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro__left{
+    margin-top: 400px;
+    justify-items: center;
+    width: 50%;
+    max-width: 500px;
+}
+
+.intro__left__title{
+    text-align: right;
+    font-size: 40px;
+    line-height: 40px;
+    margin-bottom: -25px;
+    margin-right: 15px;
+}
+
+.intro__left__nickname{
+    width: 100%;
+    margin: 0;
+    font-family: 'Orelega One';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 100px;
+    font-size: 100px;
+    background-image: linear-gradient(to right, #2F1B09, #FFC581, #754522 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+    margin-bottom: 50px;
+}
+
+.intro__left__description{
+    font-size: 35px;
+    line-height: 40px;
+    margin-bottom: 60px;
+}
+
+.intro__btn{
+    display: flex;
+    max-width: 250px;
+    min-height: 60px;
+    background-image: url("../../content/button_filled.png");
+    background-size: 100% 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.intro__btn-text{
+    margin-right: 5px;
+    color:#FFE1BD;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.intro__right{
+    align-items: end;
+    width: 50%;
+}
+
+.intro__right img{
+    mask-image: radial-gradient(#FFFFFF 50%, #FFFFFF00 60%);
+}
+
+
+/* About me */
+.about{
+    max-width: 1800px;
+    background-image: url("../../content/Frame.png");
+    background-size: 80% 100%;
+    background-repeat: no-repeat;
+    background-position: center;
+    margin-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.about__title{  
+    width: 50%;
+    padding-top: 6%;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 56px;
+    text-align: center;
+    font-family: 'Orelega One';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    font-size: 56px;
+}
+
+.about__list{
+    width: 60%;
+    margin-left: auto;
+    margin-right: auto; 
+    margin-top: 1%;
+    padding-bottom: 5%;
+}
+
+.about__list__element{
+    margin-top: 1%;
+    font-size: 20px;
+}
+
+
+/* Shelter */
+.shelter{    
+    max-width: 1200px;
+    display: flex;
+    overflow: visible;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.shelter__left{    
+    margin-top: auto;
+    margin-bottom: auto;
+}
+
+.shelter__title{
+    margin-top: 0;
+    font-family: 'Orelega One';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    font-size: 56px;
+}
+
+.shelter__text{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.shelter__btn{
+    margin-top: 60px;
+    align-items: center;
+}
+.shelter__btn-link{
+    background-image: url("../../content/button_empty.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 18px 50px;
+    text-decoration: none;
+    color: #2F1B09;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.shelter__img{    
+    mask-image: radial-gradient(#FFFFFF 5%, #FFFFFF00 70%);
+}
+
+
+/* Rules */
+.rules{
+    max-width: 1600px;
+    overflow: visible;
+    margin-bottom: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.rules__title{
+    font-family: 'Orelega One';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    font-size: 56px;
+    text-align: center;
+}
+
+.rules__text{    
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+    text-align: center;
+}
+
+
+/* Comp */
+.comp{
+    max-width: 1200px;
+    display: flex;
+    overflow: visible;
+    justify-content: space-between;
+    margin-bottom: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comp__img{
+    mask-image: radial-gradient(#FFFFFF 15%, #FFFFFF00 70%);
+}
+
+.comp__right{
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 32px;
+}
+
+.comp__title{
+    margin-top: -50px;
+    font-family: 'Orelega One';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    font-size: 56px;
+}
+
+.comp__text{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.comp__btn{
+    margin-top: 60px;
+    align-items: center;
+}
+.comp__btn-link{
+    background-image: url("../../content/button_empty.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 18px 50px;
+    text-decoration: none;
+    color: #2F1B09;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+
+/* Roulet */
+.roulet{
+    max-width: 1200px;
+    overflow: visible;
+    margin-bottom: 180px;
+    margin-left: auto;
+    margin-right: auto;
+    align-items: center;
+}
+
+.roulet__title{
+    font-family: 'Orelega One';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    font-size: 56px;
+    text-align: center;
+}
+
+.roulet__text{    
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 20px;
+}
+
+.roulet__btn{
+    max-width: 220px;
+    margin-top: 60px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.roulet__btn-link{
+    background-image: url("../../content/button_empty.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    padding: 18px 50px;
+    text-decoration: none;
+    color: #2F1B09;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+/* Links */
+.links{
+    max-width: 1096px;
+    overflow: visible;
+    margin-bottom: 180px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links__title{
+    font-family: 'Orelega One';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    font-size: 56px;
+    text-align: center;
+}
+
+.links__text{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 48px;
+    text-align: center;
+}
+
+.links__list{
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+.links__list-element{
+    min-width: 250px;
+    min-height: 150px;
+    background-image: url("../../content/link_frame.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline;
+    margin-right: 32px;
+}
+.links__list-element:last-child{
+    margin-right: 0;
+}
+
+.links__list-link{
+    display: block;
+    text-decoration: none;
+    padding-top: 32px;
+}
+
+.img__container{
+    display: flex;
+    min-width: 40px;
+    min-height: 40px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 5px;
+    align-items: center;
+}
+.links__list-img{
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.links__list-text{
+    color: #2F1B09;    
+    font-family: 'Orelega One';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px;
+    font-size: 40px;
+    text-align: center;
+}
+
+
+/* Bonuses */
+.bonuses{    
+    max-width: 1400px;
+    display: flex;
+    overflow: visible;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bonuses__left{
+    width: 50%;
+}
+
+.bonuses__img{
+    display: block;
+    mask-image: radial-gradient(#FFFFFF 15%, #FFFFFF00 70%);
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.bonuses__right{
+    width: 50%;
+    margin-top: auto;
+    margin-bottom: auto;
+    margin-left: 32px;
+}
+
+.bonuses__title{
+    font-family: 'Orelega One';
+    font-style: normal;
+    font-weight: 400;
+    line-height: 56px;
+    font-size: 56px;
+    margin-top: 0;
+}
+
+.bonuses__text{
+    font-size: 20px;
+    line-height: 24px;
+    margin-bottom: 60px;
+}
+
+.links__list-bonuses{
+    padding: 0;
+    display: flex;
+    margin: 0;
+}
+
+.links__list-bonuses_element{
+    min-width: 250px;
+    min-height: 150px;
+    background-image: url("../../content/link_frame.png");
+    background-size: 100% 100%;
+    background-repeat: no-repeat;
+    display: inline;
+    margin-right: 32px;
+}
+
+
+/* Footer */
+.footer{    
+    background-color: #2F1B09;
+}
+
+.footer__container{
+    min-width: 1400px;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__left{
+    background-image: linear-gradient(to right, #2F1B09, #FFC581, #754522 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+}
+
+.footer__links-element{
+    display: inline;
+    margin-right: 16px;
+}
+.footer__links-element:last-child{
+    margin-right: 0;
+}
+
+.footer__links-link{
+    text-decoration: none;
+}

@@ -1,0 +1,293 @@
+/* orelega-one-regular - latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'Orelega One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../fonts/orelega-one-v12-cyrillic_latin-regular.woff2') format('woff2'); 
+}
+
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../fonts/inter-v13-cyrillic-regular.woff2') format('woff2');
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    color: #2F1B09;
+    margin: 0;
+    background-size: initial;
+    background-image: linear-gradient(to bottom, #FFE4C3, #FFE4C3, #7E654D);
+    background-repeat: no-repeat;
+}
+
+
+/* Header */
+.header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2F1B091A;
+    overflow: hidden;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.header__container{
+    min-width: 1400px;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__nav__element{
+    margin-right: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    display: inline-block;
+    padding: 12px 8px;
+    gap: 8px;
+}
+.header__nav__element:last-child{
+    margin-right: 0;
+}
+
+.header__link{
+    text-decoration: none;
+    color: #2F1B09;
+}
+.header__link:hover, .header__link:focus{
+    background-image: linear-gradient(to right, #2F1B09, #FFC581, #754522);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;   
+}
+.header__link-here{
+    font-family: "Orelega One";
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #2F1B09;
+    background-image: linear-gradient(to right, #2F1B09, #FFC581, #754522);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone; 
+}
+
+/* Intro */
+.intro{
+    max-width: 1400px;
+    display: flex;
+    overflow: visible;
+    justify-content: space-between;
+    padding-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.intro__right{
+    margin-top: 50px;
+    justify-items: center;
+    width: 50%;
+    max-width: 500px;
+    text-align: center;
+}
+
+.intro__title{
+    font-family: "Orelega One";
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 100px;
+    margin-right: 15px;
+    margin-bottom: 20px;
+    margin-top: 0;
+    background-image: linear-gradient(to right, #2F1B09, #FFC581, #754522 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+}
+
+.intro__text{
+    font-size: 35px;
+    margin-bottom: 60px;
+}
+
+.intro__img{
+    mask-image: radial-gradient(#FFFFFF 20%, #FFFFFF00 70%);
+}
+
+.intro__btn{
+    display: flex;
+    max-width: 250px;
+    min-height: 60px;
+    background-image: url("../../content/button_filled.png");
+    background-size: 100% 100%;
+    margin-left: auto;
+    margin-right: auto;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+    margin-bottom: 60px;
+}
+
+.intro__btn-text{
+    margin-right: 5px;
+    color:#FFE1BD;
+    font-weight: 700;
+    font-size: 20px;
+}
+
+.roles{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+
+.roles-title{
+    font-family: "Orelega One";
+    font-weight: 400;
+    font-size: 40px;
+    margin-bottom: 16px;
+}
+
+.roles-text{    
+    font-weight: 400;
+    font-size: 20px;
+}
+
+/* Title */
+.title{
+    width: 100%;
+    margin-top: 100px;
+    font-family: "Orelega One";
+    font-weight: 400;
+    font-size: 56px;
+    text-align: center;
+}
+
+
+/* List */
+.list{
+    margin-top: 50px; 
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.list__title{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    font-family: "Orelega One";
+    font-size: 40px;
+}
+
+.list__title-left{
+    width: 20%;
+    text-align: center;
+}
+
+.list__title-middle{
+    width: 70%;
+    text-align: center;
+}
+
+.list__title-right{
+    width: 10%;
+    text-align: center;
+}
+
+.vk__list{
+    padding: 0;
+}
+
+.vk__list-element{
+    min-height: 20px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.vk__list-element:last-child{
+    margin-bottom: 90px;
+}
+
+.vk__list-left{
+    width: 20%;
+    text-align: center;
+}
+
+.vk__list-middle{
+    width: 70%;
+    text-align: center;
+}
+
+.vk__list-right{
+    width: 10%;
+    text-align: center;
+}
+
+
+/* Footer */
+.footer{    
+    background-color: #2F1B09;
+}
+
+.footer__container{
+    min-width: 1400px;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__left{
+    background-image: linear-gradient(to right, #2F1B09, #FFC581, #754522 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+}
+
+.footer__links-element{
+    display: inline;
+    margin-right: 16px;
+}
+.footer__links-element:last-child{
+    margin-right: 0;
+}
+
+.footer__links-link{
+    text-decoration: none;
+}

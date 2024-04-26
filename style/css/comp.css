@@ -1,0 +1,241 @@
+/* orelega-one-regular - latin */
+@font-face {
+    font-display: swap; 
+    font-family: 'Orelega One';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../fonts/orelega-one-v12-cyrillic_latin-regular.woff2') format('woff2'); 
+}
+
+/* inter-regular - latin */
+@font-face {
+    font-display: swap;
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    src: url('../../fonts/inter-v13-cyrillic-regular.woff2') format('woff2');
+}
+
+html{
+    box-sizing: border-box;
+}
+
+*, *::after, *::before{
+    box-sizing: inherit;
+}
+
+body{
+    font-family: 'Inter';
+    font-style: normal;
+    font-weight: 400;
+    color: #2F1B09;
+    margin: 0;
+    background-size: initial;
+    background-image: linear-gradient(to bottom, #7E654D, #FFE4C3, #FFE4C3);
+    background-repeat: no-repeat;
+}
+
+
+/* Header */
+.header{
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    left: 0;
+    background-color: #2F1B091A;
+    overflow: hidden;
+    width: 100%;
+    backdrop-filter: blur(5px);
+}
+
+.header__container{
+    min-width: 1400px;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.header__nav{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.header__nav__element{
+    margin-right: 16px;
+    font-size: 16px;
+    line-height: 16px;
+    display: inline-block;
+    padding: 12px 8px;
+    gap: 8px;
+}
+.header__nav__element:last-child{
+    margin-right: 0;
+}
+
+.header__link{
+    text-decoration: none;
+    color: #2F1B09;
+}
+.header__link:hover, .header__link:focus{
+    background-image: linear-gradient(to right, #2F1B09, #FFC581, #754522);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;   
+}
+.header__link-here{
+    font-family: "Orelega One";
+    font-size: 18px;
+    font-weight: 400;
+    text-decoration: none;
+    color: #2F1B09;
+    background-image: linear-gradient(to right, #2F1B09, #FFC581, #754522);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone; 
+}
+
+
+/* Intro */
+.intro{
+    max-width: 1400px;
+    display: flex;
+    overflow: visible;
+    justify-content: space-between;
+    margin-bottom: 90px;
+    padding-top: 120px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 0;
+}
+
+.intro__left{
+    margin-top: 50px;
+    justify-items: center;
+    width: 50%;
+    max-width: 500px;
+}
+
+.intro__title{
+    font-family: "Orelega One";
+    font-weight: normal;
+    font-size: 100px;
+    line-height: 80px;
+    margin-bottom: -25px;
+    margin-right: 15px;
+    margin-bottom: 40px;
+    background-image: linear-gradient(to right, #2F1B09, #FFC581, #754522 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+}
+
+.intro__text{
+    font-size: 35px;
+}
+
+.intro__img{
+    mask-image: radial-gradient(#FFFFFF 20%, #FFFFFF00 70%);
+}
+
+
+/* List */
+.list{
+    max-width: 1400px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.comp__list{
+    padding: 0;
+}
+
+.comp__list-element{
+    min-height: 50px;
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+.comp__list-element:last-child{
+    margin-bottom: 90px;
+}
+
+.element__left{
+    width: 25%;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+.element__img{
+    min-width: 50px;
+}
+
+.element__title{
+    margin-left: 20px;
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 24px;
+}
+
+.element__middle{
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 24px;
+    width: 55%;
+    text-align: center;
+}
+
+.element__right{
+    width: 10%;
+}
+
+.element__right-link{
+    color:#2F1B09;
+    font-weight: 700px;
+    font-size: 20px;
+    line-height: 24px;
+}
+
+/* Footer */
+.footer{    
+    background-color: #2F1B09;
+}
+
+.footer__container{
+    min-width: 1400px;
+    max-width: 1400px;
+    display: flex;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.footer__left{
+    background-image: linear-gradient(to right, #2F1B09, #FFC581, #754522 100%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -webkit-box-decoration-break: clone;
+}
+
+.footer__links-element{
+    display: inline;
+    margin-right: 16px;
+}
+.footer__links-element:last-child{
+    margin-right: 0;
+}
+
+.footer__links-link{
+    text-decoration: none;
+}
